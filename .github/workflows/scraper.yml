@@ -32,9 +32,9 @@ jobs:
         with:
           name: scholarships-data
           path: |
-           eduvision_scholarships.json
-           eduvision_scholarships.csv
-           bachelors_scholarships.csv
+            eduvision_scholarships.json
+            eduvision_scholarships.csv
+            bachelors_scholarships.csv
 
 
 

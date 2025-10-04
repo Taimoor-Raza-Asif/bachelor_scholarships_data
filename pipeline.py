@@ -12,7 +12,7 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import time, csv, json, re, sys
-from datetime import datetime, UTC
+from datetime import datetime, timezone
 from requests.adapters import HTTPAdapter, Retry
 import pandas as pd
 from dateutil import parser
@@ -169,7 +169,7 @@ def extract_fields(url):
         "application_link": apply_link,
         "summary": summary,
         "full_content": full_content,
-        "scraped_at": datetime.now(UTC).isoformat(),
+        "scraped_at": datetime.now(timezone.utc).isoformat(),
     }
 
 # ---------- CLEANING PART ----------
